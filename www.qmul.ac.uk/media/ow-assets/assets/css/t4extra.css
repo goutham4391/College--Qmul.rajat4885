@@ -1,0 +1,103 @@
+@media screen and (min-width: 768px) {
+
+    header.header {
+       /* padding: 0.6rem 0; */
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+    }
+
+    .primary-nav.slat {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        top: 80px;
+    }
+
+    #primary-nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__link {
+        position: unset;
+    }
+
+    .header__link-secondary {
+        position: unset;
+        opacity: 1;
+    }
+
+    .header__link-secondary::before {
+        content: "";
+        display: block;
+        height: 9999px;
+        margin-top: -9999px;
+    }
+    
+    .header__link-secondary span {
+        padding-top: 0.4444rem;
+        padding-bottom: 0.4444rem;
+        display: block;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+    }
+
+    .header__link-secondary:active span,
+    .header__link-secondary:focus span, 
+    .header__link-secondary:hover span {
+        border-bottom-color: #cea600;
+    }
+     
+    .tabfocus {
+        margin-bottom: 1rem;
+        position: absolute;
+        left: -9999px;
+    }
+
+    .tabfocus:focus {
+       position: unset;
+       left: unset;
+    }
+
+    .primary-nav__group--no-margin {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-drawer {
+        display: none;
+    }
+
+    .nav-drawer.is-open {
+        display: block;
+    }
+
+    .primary-nav__section-title a {
+        text-transform: uppercase;
+        color: #0d3273;
+        font-weight: 600;
+        margin-left: -0.8889rem;
+        margin-right: -0.8889rem;
+        padding: 0.8889rem;
+        width: 100%;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav-drawer .nav-drawer__back a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #0d3273;
+        cursor: pointer;
+    }
+}
+
+
+/* Herick additions */
+.primary-nav__group a {
+	text-transform: initial;
+	font-weight: normal;
+}
